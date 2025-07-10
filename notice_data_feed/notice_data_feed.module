@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Notice data feed module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function notice_data_feed_theme($existing, $type, $theme, $path) {
+  return [
+    'notice_data_item' => [
+      'variables' => [
+        'title' => NULL,
+        'url' => NULL,
+        'date' => NULL,
+        'content' => NULL,
+        'category' => NULL,
+      ],
+      'template' => 'notice-data-item',
+    ],
+  ];
+}

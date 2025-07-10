@@ -1,0 +1,5 @@
+name: 'Notice data feed'
+type: module
+description: 'Custom module that displays notices from The Gazette API.'
+package: Custom
+core_version_requirement: ^10 || ^11

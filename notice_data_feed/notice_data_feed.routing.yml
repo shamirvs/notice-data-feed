@@ -1,0 +1,7 @@
+notice_data_feed.example:
+  path: '/notice-data-feed/list'
+  defaults:
+    _title: 'Notice Data Feed List'
+    _controller: '\Drupal\notice_data_feed\Controller\NoticeDataFeedController:content'
+  requirements:
+    _permission: 'access content'

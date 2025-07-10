@@ -1,0 +1,5 @@
+notice_data_list:
+  version: VERSION
+  css:
+    theme:
+      assets/css/notice-data.css: {}

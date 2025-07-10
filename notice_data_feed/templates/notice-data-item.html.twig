@@ -1,0 +1,20 @@
+{{ attach_library('notice_data_feed/notice_data_list') }}
+
+{% set date = date|default('now'|date) %}
+{% set title = title|default('Notice') %}
+{% set url = url|default('#') %}
+{% set content = content|default('') %}
+<div class="notices-container">
+	<article class="notice-article">
+		<header>
+			<h3>
+				<a href="{{ url }}" target="_blank">{{ title }}</a>
+			</h3>
+			<time datetime="{{ date|date('Y-m-d') }}">{{ date }}</time>
+      <span class="notice-category">{{ category|default('General') }}</span>
+		</header>
+		<div class="notice-content">
+			{{ content|raw }}
+		</div>
+	</article>
+</div>
